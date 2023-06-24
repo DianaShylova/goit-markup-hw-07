@@ -10,7 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/base-comp.css">
+    <link rel="stylesheet" href="./css/mob.css" media="screen and (max-width: 767.9px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:768px) and (max-width:1157.9px)"/>
+    <link rel="stylesheet" href="./css/desk.css" media="screen and (min-width:1158px)"/>
 </head>
 <body>
 <!-- HEADER -->
@@ -18,99 +24,30 @@
         <div class="container header-container">
             
             <nav  class="site-nav">
-                <a class="logo link" href="./index.html">Web<span class="color-logo-part">Studio</span></a>
-                <ul class="site-nav list">
-                    <li class="menu-item"> <a class="menu-link link is-active" href="./index.html">Studio</a></li>
-                    <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+                <a class="logo link" href="./index.html" target="_self" title="main page WEBSTUDIO">Web<span class="color-logo-part">Studio</span></a>
+                <ul class="site-nav-list list">
+                    <li class="menu-item active"> <a class="menu-link link is-active" href="./index.html" target="_self" title="main page WEBSTUDIO">Studio</a></li>
+                    <li class="menu-item"><a class="menu-link link" href="./portfolio.html" target="_self" title="Portfolio page">Portfolio</a></li>
                     <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
                 </ul>
-            </nav> 
-            <address class="contacts">
+            </nav>    
+                 <address class="contacts">
                 <ul class="list contacts-nav">
                     <li class="contact-item"> <a class="link tel" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                    <li class="contact-item"><a class="link tel" href="tel:+110001111111">+11 (000) 111-11-11</a> </li>
-                
+                    <li class="contact-item"><a class="link tel" href="tel:+110001111111">+11 (000) 111-11-11</a> </li>                
                 </ul>
-            </address>
-            <button class="burger-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                </address>
+             
+           
+            <button type="button" class="burger-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="32" height="22">
                     <use href="./images/icons.svg#icon-charmmenu-hamburger"></use>
                 </svg>
             </button>
         
         </div>
-        <!-- MOBILE NAV -->
-        <div class="mobile-menu js-menu-container is-hidden">
-            <div class="container mobile-menu-wrapper">
-                <button class="mob-menu-btn-close js-close-menu" type="button">
-                    <svg class="back-menu-btn-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close_btn"></use>
-                    </svg>
-                </button>
-
-                <nav class="menu-navigation-wrapper">
-                    <ul class="list menu-nav-list">
-                        <li class="mob-site-nav">
-                            <a href="./index.html" class="mob-site-nav-item menu active link">Studio</a>
-                        </li>
-                        <li class="mob-site-nav">
-                            <a href="./portfolio.html" class="mob-site-nav-item menu link">Portfolio</a>
-                        </li>
-                        <li class="mob-site-nav">
-                            <a href="" class="mob-site-nav-item menu link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="btm-mob-menu">
-                    <address class="mob-menu-cnts">
-                        <ul class="list mob-menu-cnts-list">
-                            <li class="mob-site-nav"><a class="link tel mob-site-nav-item" href="tel:+110001111111">+11 (000) 111-11-11</a> 
-                            </li>
-                            <li class="mob-site-nav"> <a class="link tel item-name" href="mailto:info@devstudio.com">info@devstudio.com</a> 
-                            </li>                        
-                    
-                        </ul>
-                    </address>
-                    <div class="mob-socialmedia">
-                        <ul class="list social-media s-m-footer-gap">
-                            <li class="s-m-item">
-                                <a href="#" class="link s-m-link s-m-link-footer">
-                                    <svg width="24" height="24" class="s-m-logo-fill">
-                                        <use href="./images/icons.svg#icon-instagram">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="s-m-item">
-                                <a href="#" class="link s-m-link s-m-link-footer">
-                                    <svg width="24" height="24" class="s-m-logo-fill">
-                                        <use href="./images/icons.svg#icon-twitter">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="s-m-item">
-                                <a href="#" class="link s-m-link s-m-link-footer">
-                                    <svg width="24" height="24" class="s-m-logo-fill">
-                                        <use href="./images/icons.svg#icon-facebook">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="s-m-item">
-                                <a href="#" class="link s-m-link s-m-link-footer">
-                                    <svg width="24" height="24" class="s-m-logo-fill">
-                                        <use href="./images/icons.svg#icon-linkedin">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>    
-            </div>
-        </div>
     </header>
+           
 
 <!-- MAIN -->
     <main>
@@ -127,52 +64,52 @@
         <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Our priorities</h2>
-                <ul class="list product-flex-container">
-                    <li class="team-flex-element">
+                <ul class="list priorities-container">
+                    <li class="priorities-element">
                        <div class="priority-icon">
                            <svg width="64" height="64">
                             <use href="./images/icons.svg#icon-antenna"></use>
                            </svg> 
                         </div>
-                        <h3 class="item-name card-content-nocentered">Strategy</h3>
+                        <h3 class="prior-name card-content-nocentered">Strategy</h3>
                         <p class="description card-content-nocentered">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                     </li>
-                    <li class="team-flex-element">
+                    <li class="priorities-element">
                         <div class="priority-icon">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
 
                             </svg>
                         </div>     
-                        <h3 class="item-name card-content-nocentered">Punctuality</h3>
+                        <h3 class="prior-name card-content-nocentered">Punctuality</h3>
                         <p class="description card-content-nocentered">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                         
                     </li>
-                    <li class="team-flex-element">
+                    <li class="priorities-element">
                         <div class="priority-icon">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
 
                             </svg> 
                         </div>    
-                        <h3 class="item-name card-content-nocentered">Diligence</h3>
+                        <h3 class="prior-name card-content-nocentered">Diligence</h3>
                         <p class="description card-content-nocentered">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>                        
                     </li>
-                    <li class="team-flex-element">
+                    <li class="priorities-element">
                         <div class="priority-icon">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
 
                             </svg>
                         </div>     
-                        <h3 class="item-name card-content-nocentered">Technologies</h3>
+                        <h3 class="prior-name card-content-nocentered">Technologies</h3>
                         <p class="description card-content-nocentered">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>                        
                     </li>
                 </ul>
             </div>
         </section>
         <!-- DOING -->
-        <section class="section">
+        <section class="doing-section">
             <div class="container">
              <h2 class="suptitle">What are we doing</h2>    
                 <ul class="list product-flex-container">
@@ -187,9 +124,12 @@
         <section class="section team">
             <div class="container">
                 <h2 class="suptitle">Our Team</h2>
-                <ul class="list product-flex-container">
+                <ul class="list team-container">
                     <li class="card team-flex-element team-shadow">
-                            <img src="./images/img_.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <picture>
+                            <source srcset="./images/team/img_all@1x-3.jpg, ./images/team/img_all@2x-3.jpg" type="image/jpeg">
+                            <img src="./images/img_.jpg" alt="Mark Guerrero - the Product Designer" width="264" height="260">
+                        </picture>    
                             <div class="card-content">
                                 <h3 class="item-name">Mark Guerrero</h3>
                                 <p  class="description">Product Designer</p>
@@ -232,10 +172,14 @@
                                             
                     </li>
                     <li class="card team-flex-element team-shadow">
-                            <img src="./images/img_1.jpg" alt="Tom Ford" width="264" height="260">
+                        <picture>
+                            <source srcset="./images/team/img_all@1x-2.jpg, ./images/team/img_all@2x-2.jpg" type="image/jpeg">
+                            <img src="./images/img_1.jpg" alt="Tom Ford - the Frontend Developer" width="264" height="260">
+                        </picture>
+                            
                             <div class="card-content">
-                                <h3 class="item-name">Mark Guerrero</h3>
-                                <p class="description">Product Designer</p>
+                                <h3 class="item-name">Tom Ford</h3>
+                                <p class="description">Frontend Developer</p>
                                 <ul class="list social-media">
                                     <li class="s-m-item">
                                         <a href="#" class="link s-m-link">
@@ -275,10 +219,13 @@
                     
                     </li>
                     <li class="card team-flex-element team-shadow">
-                            <img src="./images/img_2.jpg" alt="Camila Garcia" width="264" height="260">
+                        <picture>
+                            <source srcset="./images/team/img_all@1x-1.jpg, ./images/team/img_all@2x-1.jpg" type="image/jpeg">
+                            <img src="./images/img_2.jpg" alt="Camila Garcia - Marketing" width="264" height="260">
+                        </picture>                     
                             <div class="card-content">
-                                <h3 class="item-name">Mark Guerrero</h3>
-                                <p class="description">Product Designer</p>
+                                <h3 class="item-name">Camila Garcia</h3>
+                                <p class="description">Marketing</p>
                                 <ul class="list social-media">
                                     <li class="s-m-item">
                                         <a href="#" class="link s-m-link">
@@ -318,10 +265,14 @@
                         
                     </li>
                     <li class="card team-flex-element team-shadow">
-                        <img src="./images/img_3.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <picture>
+                            <source srcset="./images/team/img_all@1x.jpg, ./images/team/img_all@2x.jpg" type="image/jpeg">
+                            <img src="./images/img_3.jpg" alt="Daniel Wilson - UI Designer" width="264" height="260">
+                        </picture>
+                        
                             <div class="card-content">
-                                <h3 class="item-name">Mark Guerrero</h3>
-                                <p class="description">Product Designer</p>
+                                <h3 class="item-name">Daniel Wilson</h3>
+                                <p class="description">UI Designer</p>
                                 <ul class="list social-media">
                                     <li class="s-m-item">
                                         <a href="#" class="link s-m-link">
@@ -363,46 +314,46 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section class="customers-section">
             <div class="container">
                 <h2 class="suptitle">Customers</h2>    
                 <ul class="list customer-flex-container">
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo-1"></use>
                             </svg>
                         </a>
                     </li> 
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo-4"></use>
                             </svg>
                         </a>
                     </li> 
-                    <li class="customer-flex-element ">
+                    <li class="customer-flex-element">
                         <a class="link customer-link" href="#">
                             <svg width="104" height="56" class="customer-logo-color">
                                 <use href="./images/icons.svg#icon-Logo-5"></use>
@@ -426,7 +377,7 @@
                 <p class="txt-footer sub-txt-footer">Social media</p>
                 <ul class="list social-media s-m-footer-gap">
                     <li class="s-m-item">
-                        <a href="#" class="link s-m-link s-m-link-footer">
+                        <a href="https://www.instagram.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank" rel="noreferrer noopener" title="Instagram webstudio">
                             <svg width="24" height="24" class="s-m-logo-fill">
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
@@ -434,7 +385,7 @@
                         </a>
                     </li>
                     <li class="s-m-item">
-                        <a href="#" class="link s-m-link s-m-link-footer">
+                        <a href="https://www.twitter.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank" rel="noreferrer noopener" title="Twitter webstudio">
                             <svg width="24" height="24" class="s-m-logo-fill">
                                 <use href="./images/icons.svg#icon-twitter">
                                 </use>
@@ -442,7 +393,7 @@
                         </a>
                     </li>
                     <li class="s-m-item">
-                        <a href="#" class="link s-m-link s-m-link-footer">
+                        <a href="https://www.facebook.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank" rel="noreferrer noopener" title="Facebook webstudio">
                             <svg width="24" height="24" class="s-m-logo-fill">
                                 <use href="./images/icons.svg#icon-facebook">
                                 </use>
@@ -450,7 +401,7 @@
                         </a>
                     </li>
                     <li class="s-m-item">
-                        <a href="#" class="link s-m-link s-m-link-footer">
+                        <a href="https://ua.linkedin.com/webstudio" target="_blank" rel="noreferrer noopener" title="Linkedin of webstudio" class="link s-m-link s-m-link-footer">
                             <svg width="24" height="24" class="s-m-logo-fill">
                                 <use href="./images/icons.svg#icon-linkedin">
                                 </use>
@@ -459,9 +410,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-element">
+            <div class="footer-element ftr-sbscr">
                 <p class="sub-txt-footer">Subscribe</p>  
-                <form class="ftr-subscribe">
+                <form class="ftr-subsc-form">
                     <label class="ftr-form-field">
                        <input type="email" class="ftr-form-input" name="email" placeholder="E-mail">               
                     </label>
@@ -480,7 +431,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn-close" type="button" data-modal-close>
+            <button data-modal-close class="modal-btn-close" type="button">
                 <svg class="modal-btn-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close_btn"></use>
                 </svg>
@@ -547,10 +498,84 @@
            </form> 
         </div>
     </div>
+    <!-- MOBILE NAV -->
+    <div class="mobile-menu js-menu-container is-hidden">
+        <div class="container mobile-menu-wrapper">
+            <button class="mob-menu-btn-close js-close-menu" type="button">
+                <svg class="back-menu-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close_btn"></use>
+                </svg>
+            </button>
+    
+            <div class="menu-navigation-wrapper">
+                <ul class="list menu-nav-list">
+                    <li class="mob-site-nav">
+                        <a href="./index.html" class="mob-site-nav-item menu active link">Studio</a>
+                    </li>
+                    <li class="mob-site-nav">
+                        <a href="./portfolio.html" class="mob-site-nav-item menu link">Portfolio</a>
+                    </li>
+                    <li class="mob-site-nav">
+                        <a href="" class="mob-site-nav-item menu link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont-wrapper">
+                <ul class="list mob-menu-cnts-list">
+                    <li class="mb-cont-list-item"><a class="link tel cont-info-tel" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                    <li class="mb-cont-list-item"> <a class="link tel cont-info-mail"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+    
+                <ul class="list social-media s-m-mob-gap">
+                    <li class="s-m-item">
+                        <a href="https://www.instagram.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank"
+                            rel="noreferrer noopener" title="Instagram webstudio">
+                            <svg width="24" height="24" class="s-m-logo-fill">
+                                <use href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="s-m-item">
+                        <a href="https://www.twitter.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank"
+                            rel="noreferrer noopener" title="Twitter webstudio">
+                            <svg width="24" height="24" class="s-m-logo-fill">
+                                <use href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="s-m-item">
+                        <a href="https://www.facebook.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank"
+                            rel="noreferrer noopener" title="Facebook webstudio">
+                            <svg width="24" height="24" class="s-m-logo-fill">
+                                <use href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="s-m-item">
+                        <a href="https://ua.linkedin.com/webstudio" class="link s-m-link s-m-link-footer" target="_blank"
+                            rel="noreferrer noopener" title="Linkedin of webstudio">
+                            <svg width="24" height="24" class="s-m-logo-fill">
+                                <use href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+/* ============<!-- VARIABLES -->====== */
+:root {
+    --brand-color: #2E2F42;
+    /* background, main txt*/
+    --brand-bright-color: #4D5AE5;
+    /*logo, filter txt*/
+    --prod-overlay-color: rgba(77, 90, 229, 0.5);
+    /*product overlay color*/
+    --light-bg: #F4F4FD;
+    /*light background for section and  filter buttons*/
+    --content-txt-color: #434455;
+    --agr-txt-color: #8e8f99;
+    /* content text color*/
+    --focus-btn-color: #404BBF;
+    /* focus button color*/
+    --focus-footer-s-m: #31d0aa;
+    /*focus footer social media color*/
+    --logo-font: 'Raleway', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+    --body-color: #FFFFFF;
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============<!-- /VARIABLES -->====== */
