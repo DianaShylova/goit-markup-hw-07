@@ -64,8 +64,8 @@
         text-align: center;
         margin: 0 auto 80px auto;
     }
-        .modal {
-        width: 392px;
+        div.modal {
+        width: calc(100% - 36px);
         }
   
         /* PRIORITIES */
